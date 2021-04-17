@@ -39,7 +39,8 @@ def get_posts(target_subreddit, post_limit, time_frame) -> dict:
             post.comments.replace_more(limit=None)
             for comment in post.comments.list():
                 print(comment.body)
-            continue
+        except:
+            contine
 
 def evaulate_comment(comment) -> int: #evaluates the comment, returns an integer from -1 to +1 indicating it's signifigance
 
