@@ -1,0 +1,9 @@
+.appbar {
+    color: white;
+    background-color: #474747;
+    height: 150px;
+}
+
+.title {
+    align-self: center;
+}
