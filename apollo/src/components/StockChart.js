@@ -1,29 +1,28 @@
-
 import React, { Component } from 'react';
-// import Paper from '@material-ui/core/Paper';
+import Paper from '@material-ui/core/Paper';
 import { Line } from "react-chartjs-2";
+import './StockChart.css';
+
 class StockChart extends Component {
     render() {
         const data = {
-            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
             datasets: [
                 {
                     label: "First dataset",
-                    data: [33, 53, 85, 41, 44, 65],
+                    data: [33, 53, 85, 41, 44, 65, 34, 54, 78, 67, 365, 56],
                     fill: true,
-                    backgroundColor: "rgba(75, 192, 192, 0.2)",
-                    borderColor: "rgba(75, 192, 192, 1)"
-                },
-                {
-                    label: "Second dataset",
-                    data: [33, 25, 35, 51, 54, 76],
-                    fill: false,
-                    borderColor: "#742774"
+                    backgroundColor: "rgba(242, 167, 39, 0.2)",
+                    borderColor: "#F2A737"
                 }
             ]
         };
         
-        return (<Line data={data} />);
+        return (
+        <Paper className="container">
+            <Line data={data} />
+        </Paper>
+        );
     }
 };
 
