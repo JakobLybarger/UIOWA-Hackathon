@@ -1,6 +1,6 @@
 .appbar {
     color: white;
-    background-color: #474747;
+    background-color: #474747 !important;
     height: 150px;
 }
 
