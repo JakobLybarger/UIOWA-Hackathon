@@ -14,3 +14,8 @@
     width: 75px;
     padding-top: 5px;
 }
+
+.sort_by {
+    padding-left: 20px;
+    opacity: 0.7;
+}
